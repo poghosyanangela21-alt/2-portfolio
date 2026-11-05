@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <nav class="nav">
+        <ul class="nav__list reset-list">
+          <li><a class="nav__link" href="/">Главная</a></li>
+          <li><a class="nav__link" onclick="showMenu()" href="#about">Обо мне</a></li>
+          <li><a class="nav__link" onclick="showMenu()" href="#skills">Навыки</a></li>
+          <li><a class="nav__link" onclick="showMenu()" href="#portfolio">Портфолио</a></li>
+          <li><a class="nav__link" onclick="showMenu()" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="lang header__lang">
+        <a href="/ru/" class="lang__btn lang__btn_active reset-button">RU</a>
+        |
+        <a href="/en/" class="lang__btn reset-button">ENG</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <div class="hero__content-inner">
+            <h2 class="hero__title">
+              Denis <br> Novik
+            </h2>
+            <p class="hero__description text">
+              UX | UI designer <br>
+              24 years old, Minsk
+            </p>
+          </div>
+          <button class="burger reset-button" onclick="showMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="lang hero__lang">
+            <a href="/ru/" class="lang__btn lang__btn_active reset-button">RU</a>
+            |
+            <a href="/en/" class="lang__btn reset-button">ENG</a>
+          </div>
+        </div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/hero/desktop.jpg">
+          <img class="hero__img" src="/img/hero/mobile.jpg" alt="">
+        </picture>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__container text container">
+        <h2 class="about__title title">About me</h2>
+        <p class="about__text">
+          Hi, I'm Denis – UX/UI designer from Minsk. <br>
+          I'm interested in design and everything connected with it.
+        </p>
+        <p class="about__text">
+          I'm studying at courses "Web and mobile design <br>
+          interfaces" in IT-Academy.
+        </p>
+        <p class="about__text">
+          Ready to implement excellent projects <br>
+          with wonderful people.
+        </p>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills__container container">
+        <h2 class="skills__title title">Skills</h2>
+        <p class="skills__text text">I work in such programs as</p>
+        <ul class="skills__list reset-list">
+          <li>
+            <img width="90" height="90" src="/img/skills/ps.jpg" alt="PhotoShop">
+            <h3 class="skills__item-title">Adobe <br> Photoshop</h3>
+            <ul class="skills__item-list-star reset-list">
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star-light.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star-light.svg" alt="">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img width="90" height="90" src="/img/skills/ai.jpg" alt="Adobe Illustrator">
+            <h3 class="skills__item-title">Adobe <br> Illustrator</h3>
+            <ul class="skills__item-list-star reset-list">
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star-light.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star-light.svg" alt="">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img width="90" height="90" src="/img/skills/ae.jpg" alt="Adobe Effect">
+            <h3 class="skills__item-title">Adobe <br> Effect</h3>
+            <ul class="skills__item-list-star reset-list">
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star-light.svg" alt="">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img width="60" height="90" src="/img/skills/figma.png" alt="Figma">
+            <h3 class="skills__item-title">Figma</h3>
+            <ul class="skills__item-list-star reset-list">
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star.svg" alt="">
+              </li>
+              <li>
+                <img src="/svg/star-light.svg" alt="">
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__container container">
+        <h2 class="portfolio__title title">Portfolio</h2>
+        <ul class="portfolio__list reset-list">
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="/img/portfolio/fashion-store.jpg" alt="">
+            <a class="portfolio__link" href="#">Online fashion store - Homepage</a>
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="/img/portfolio/reebok_web.jpg" alt="">
+            <a class="portfolio__link" href="#">Reebok Store - Concept</a>
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="/img/portfolio/braun-landing-page.jpg" alt="">
+            <a class="portfolio__link" href="#">Braun Landing Page - Concept</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact" id="contacts">
+      <div class="contact__container container">
+        <h2 class="contact__title title">Contacts</h2>
+        <p class="contact__text text">
+          Want to know more or just chat? <br>
+          You are welcome!
+        </p>
+        <button class="contact__btn reset-button text" onclick="dialog.showModal()">Send message</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <ul class="footer__list reset-list">
+        <li>
+          <a class="footer__link" href="#">
+            <img src="/svg/linkedin.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="#">
+            <img src="/svg/instagram.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="#">
+            <img src="/svg/behance.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="#">
+            <img src="/svg/dribble.svg" alt="">
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright text">
+        Like me on <br>
+        LinkedIn, Instagram, Behance, Dribble
+      </p>
+    </div>
+  </footer>
+  <dialog class="dialog" id="dialog">
+    <div class="dialog__close-box">
+      <button class="dialog__close" onclick="dialog.close()">X</button>
+    </div>
+    <form class="dialog__form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="63809841-c47b-4133-b4d4-454c4babaf0c">
+      <div><input type="text" name="name" placeholder="Name" required></div>
+      <div><input type="email" name="email" placeholder="Email" required></div>
+      <div><textarea name="message" placeholder="Message" required></textarea></div>
+      <button type="submit">Submit Form</button>
+    </form>
+  </dialog>
+  <script src="/main.js"></script>
+</body>
+
+</html>
